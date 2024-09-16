@@ -1,0 +1,200 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: bisque;
+}
+
+header{
+    background-color: white;
+    padding: 24px;
+}
+
+.header-content .logo{
+    width: 50px;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1290px;
+    margin: 0 auto;
+}
+
+.icons{
+    display: none;
+}
+
+.navbar{
+    display: flex;
+    gap: 50px;
+}
+
+.navbar a{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #492118;
+    text-decoration-line: none;
+}
+
+main {
+    padding: 0 25px;
+}
+
+.hero-section{
+    margin-top: 50px;
+}
+
+.hero-section p{
+    color: #492118;
+    font-size: 20px;
+    text-align: center;
+}
+
+.hero-section .img-container{
+    max-width: 1290px;
+    margin: 0 auto;
+}
+
+img{
+    width: 100%;
+}
+
+.section {
+    margin-top: 100px;
+}
+
+.section h2{
+    color: #492118;
+    font-size: 1.75rem;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.section .img-container{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+footer{
+    max-width: 960px;
+    margin: 0 auto;
+    padding-top: 25px;
+    background-color: rgba(255, 228, 196, 0.75);
+}
+
+footer .top{
+    text-align: right;
+    font-size: 1.25rem;
+}
+
+footer .end{
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: 1.05rem;
+}
+
+.hemburger{
+    padding: 3px 8px;
+    border-radius: 5px;
+    display: none;
+}
+
+.hemburger .menu-icon{
+    font-size: 1.25rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.close-icon{
+    position: absolute;
+    top: -5px;
+    right: 12px;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 600;
+    display: none;
+}
+
+@media (max-width: 1100px) {
+    .navbar a{
+        font-size: 1rem;
+    }
+    .navbar{
+        gap: 20px;
+    }
+    header{
+        padding: 15px 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    header{
+        background-color: #f6f0ebb7;
+        backdrop-filter: blur(10px);
+        position: sticky;
+        top: 0;
+        padding: 8px 25px;
+    }
+
+    .navbar{
+        position: absolute;
+        background: rgba(255, 255, 255, 0.95    );
+        flex-direction: column;
+        top: 16px;
+        right: 16px;
+        padding: 10px;
+        display: none;
+    }
+    .navbar a{
+        font-size: 0.8rem;
+    }
+    .hemburger, .close-icon{
+        display: block;
+    }
+    footer .top{
+        font-size: 1rem;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .header-content .logo{
+        width: 40px;
+    }
+    .open{
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-section p{
+        font-size: 1rem;
+    }
+    .section {
+        margin-top: 35px;
+    }
+    .section h2{
+        font-size: 1.50rem;
+    }
+    footer .top{
+        font-size: 1.2rem;
+    }
+    footer .end{
+        font-size: 1rem;
+    }
+    .hero-section{
+        margin-top: 20px;
+    }
+}
